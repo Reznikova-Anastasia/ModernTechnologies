@@ -17,6 +17,10 @@ def Elimination(n, a, b):
             
                 a[i, j] = a[k, j] - a[i, j]*factor #зануление элементов
             b[i] = b[k] - b[i]*factor #для b столбец всего один
+    print("a:")
+    print(a)
+    print("b:")
+    print(b)
     return a, b
   
 def Back_substitution(x, b, a, n):
