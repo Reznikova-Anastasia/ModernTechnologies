@@ -36,4 +36,6 @@ def Back_substitution(x, b, a, n):
             #пример решение уравнения a1*x1 + a2*x2 + a3*x3 = b1 => x1 = [b1 - (a2*x2 + a3*x3)] / a1
             sum_ax += a[i, j] * x[j]
             x[i] = (b[i] - sum_ax) / a[i, i] 
+    print("x:")
+    print(x)
     return x
